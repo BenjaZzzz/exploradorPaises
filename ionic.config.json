@@ -1,0 +1,7 @@
+{
+  "name": "exploradorPaises",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
