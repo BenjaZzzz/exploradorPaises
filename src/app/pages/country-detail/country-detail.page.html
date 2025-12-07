@@ -1,0 +1,79 @@
+<!-- src/app/pages/country-detail/country-detail.page.html -->
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/country-list"></ion-back-button>
+    </ion-buttons>
+    <ion-title>{{ country?.name?.common || 'Detalles del País' }}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!-- Loading state -->
+  <div *ngIf="loading" class="loading">
+    <ion-spinner name="crescent"></ion-spinner>
+    <p>Cargando detalles...</p>
+  </div>
+
+  <!-- Error state -->
+  <div *ngIf="!loading && errorMessage" class="error">
+    <ion-icon name="alert-circle-outline" size="large"></ion-icon>
+    <p>{{ errorMessage }}</p>
+    <p>Mostrando datos de ejemplo.</p>
+  </div>
+
+  <!-- Country details -->
+  <div *ngIf="!loading && country" class="country-detail">
+    <!-- Flag -->
+    <div class="flag-container">
+      <img [src]="country.flags.png" [alt]="'Bandera de ' + country.name.common" class="flag-large" />
+    </div>
+
+    <!-- Country info -->
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>{{ country.name.common }}</ion-card-title>
+        <ion-card-subtitle>{{ country.name.official }}</ion-card-subtitle>
+      </ion-card-header>
+
+      <ion-card-content>
+        <ion-list lines="full">
+          <ion-item>
+            <ion-label>Capital</ion-label>
+            <ion-text slot="end">{{ country.capital?.[0] || 'N/A' }}</ion-text>
+          </ion-item>
+
+          <ion-item>
+            <ion-label>Población</ion-label>
+            <ion-text slot="end">{{ country.population | number }}</ion-text>
+          </ion-item>
+
+          <ion-item>
+            <ion-label>Región</ion-label>
+            <ion-text slot="end">{{ country.region || 'N/A' }}</ion-text>
+          </ion-item>
+
+          <ion-item>
+            <ion-label>Subregión</ion-label>
+            <ion-text slot="end">{{ country.subregion || 'N/A' }}</ion-text>
+          </ion-item>
+
+          <ion-item>
+            <ion-label>Moneda</ion-label>
+            <ion-text slot="end">{{ getCurrency(country.currencies) }}</ion-text>
+          </ion-item>
+
+          <ion-item>
+            <ion-label>Idiomas</ion-label>
+            <ion-text slot="end">{{ getLanguages(country.languages) }}</ion-text>
+          </ion-item>
+
+          <ion-item>
+            <ion-label>Zona Horaria</ion-label>
+            <ion-text slot="end">{{ country.timezones?.[0] || 'N/A' }}</ion-text>
+          </ion-item>
+        </ion-list>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>

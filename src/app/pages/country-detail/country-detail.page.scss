@@ -1,0 +1,44 @@
+// src/app/pages/country-detail/country-detail.page.scss
+.flag-container {
+  text-align: center;
+  padding: 20px;
+  background: var(--ion-color-light);
+}
+
+.flag-large {
+  max-width: 200px;
+  max-height: 120px;
+  border: 1px solid var(--ion-color-medium);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.loading, .error {
+  text-align: center;
+  padding-top: 50px;
+
+  ion-spinner {
+    margin-bottom: 16px;
+  }
+
+  ion-icon {
+    color: var(--ion-color-warning);
+    margin-bottom: 16px;
+  }
+}
+
+.country-detail {
+  padding-bottom: 20px;
+}
+
+ion-card {
+  margin: 16px;
+}
+
+ion-list {
+  background: transparent;
+}
+
+ion-item {
+  --background: transparent;
+}
