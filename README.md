@@ -1,63 +1,68 @@
 # 🌍 Explorador de Países - Ionic/Angular App
-https://img.shields.io/badge/Ionic-3880FF?style=for-the-badge&logo=ionic&logoColor=white
-https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white
-https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white
+
+[![Ionic](https://img.shields.io/badge/Ionic-3880FF?style=for-the-badge&logo=ionic&logoColor=white)](https://ionicframework.com/)
+[![Angular](https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white)](https://angular.io/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 
 Una aplicación móvil moderna para explorar información de países del mundo, construida con Ionic 7 y Angular 16.
 
-✨ Características
-🔍 Búsqueda inteligente de países por nombre
+## ✨ Características
 
-🏛️ Listado completo con banderas y datos básicos
+- 🔍 **Búsqueda inteligente** de países por nombre
+- 🏛️ **Listado completo** con banderas y datos básicos
+- 📱 **Diseño responsive** adaptado para móvil y escritorio
+- 🌙 **Modo oscuro** automático según preferencias del sistema
+- ⚡ **Transiciones suaves** entre páginas
+- 📊 **Detalles completos** de cada país
+- 🚀 **Carga rápida** con manejo de errores
 
-📱 Diseño responsive adaptado para móvil y escritorio
+## 🚀 Demo en Vivo
 
-🌙 Modo oscuro automático según preferencias del sistema
+🔗 *[Enlace al demo (si está disponible)]*
 
-⚡ Transiciones suaves entre páginas
+## 📸 Capturas de Pantalla
 
-📊 Detalles completos de cada país
+| Lista de Países | Detalles del País | Búsqueda |
+|-----------------|-------------------|----------|
+| ![Lista](https://via.placeholder.com/300x600/3880FF/ffffff?text=Lista+Pa%C3%ADses) | ![Detalles](https://via.placeholder.com/300x600/52C41A/ffffff?text=Detalles) | ![Búsqueda](https://via.placeholder.com/300x600/FAAD14/ffffff?text=B%C3%BAsqueda) |
 
-🚀 Carga rápida con manejo de errores
+## 🛠️ Tecnologías Utilizadas
 
-🚀 Demo en Vivo
-🔗 [Enlace al demo (si está disponible)]
+- **Framework**: Ionic 7 + Angular 16
+- **Lenguaje**: TypeScript
+- **API**: REST Countries API v3.1
+- **Estilos**: SCSS con diseño responsive
+- **Animaciones**: Transiciones CSS nativas
+- **Iconos**: Ionicons
 
-📸 Capturas de Pantalla
-Lista de Países	Detalles del País	Búsqueda
-https://via.placeholder.com/300x600/3880FF/ffffff?text=Lista+Pa%C3%ADses	https://via.placeholder.com/300x600/52C41A/ffffff?text=Detalles	https://via.placeholder.com/300x600/FAAD14/ffffff?text=B%C3%BAsqueda
-🛠️ Tecnologías Utilizadas
-Framework: Ionic 7 + Angular 16
+## 📦 Instalación
 
-Lenguaje: TypeScript
+### Prerrequisitos
+- Node.js 16.x o superior
+- npm 8.x o superior
+- Ionic CLI
 
-API: REST Countries API v3.1
+### Pasos de instalación
 
-Estilos: SCSS con diseño responsive
-
-Animaciones: Transiciones CSS nativas
-
-Icons: Ionicons
-
-📦 Instalación
-Prerrequisitos
-Node.js 16.x o superior
-
-npm 8.x o superior
-
-Ionic CLI
-
-Pasos de instalación
-Clonar el repositorio
-
+1. **Clonar el repositorio**
+```
+bash
+git clone https://github.com/tuusuario/exploradorpaises.git
+cd explorador-paises
+```
+## Pasos de instalación
+### Clonar el repositorio
 bash
 git clone https://github.com/tuusuario/explorador-paises.git
 cd explorador-paises
-Instalar dependencias
 
+## Instalar dependencias
+```
 bash
 npm install
-Instalar Ionic CLI (si no lo tienes)
+```
+
+## Instalar Ionic CLI (si no lo tienes)
 
 bash
 npm install -g @ionic/cli
@@ -69,25 +74,26 @@ Para compilar para producción
 
 bash
 ionic build --prod
+
 🎯 Uso
 Desarrollo
 bash
-# Iniciar servidor de desarrollo
+## Iniciar servidor de desarrollo
 ionic serve
 
-# Ejecutar en modo laboratorio (multi-dispositivo)
+## Ejecutar en modo laboratorio (multi-dispositivo)
 ionic serve --lab
 
-# Ejecutar pruebas unitarias
+## Ejecutar pruebas unitarias
 npm test
 Compilación
 bash
-# Para Android
+## Para Android
 ionic capacitor add android
 ionic capacitor copy android
 ionic capacitor sync android
 
-# Para iOS
+## Para iOS
 ionic capacitor add ios
 ionic capacitor copy ios
 ionic capacitor sync ios
@@ -99,7 +105,7 @@ ionic build --prod
 # Desplegar en Firebase Hosting
 firebase deploy
 📁 Estructura del Proyecto
-text
+```
 explorador-paises/
 ├── src/
 │   ├── app/
@@ -122,7 +128,7 @@ explorador-paises/
 ├── angular.json                       # Configuración Angular
 ├── package.json                       # Dependencias
 └── README.md                          # Este archivo
-
+````
 🔧 API Integration
 La aplicación utiliza REST Countries API v3.1:
 
@@ -220,7 +226,7 @@ Si este proyecto te resulta útil, ¡dale una estrella! ⭐
 
 Desarrollado con ❤️ usando Ionic & Angular
 
-https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white
-https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white
-https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white
+[![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/tuusuario)
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/tuusuario)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/tuusuario)
 
